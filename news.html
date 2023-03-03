@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Good Boi News - News</title>
+    <link rel="stylesheet" href="news.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="/home.html">Good Boi News</a>
+        </div>
+        <div class="links">
+          <a href="home.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>News</h1>
+      <p>Latest News from Facebook</p>
+      <div class="news-container">
+        <!--Here add news from facebook page-->
+        <div class="fb-post" data-show-text="true">
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid0DSmeWwv1ofZqtbtPo12STum7sHjxihuigeFM6F7ZLhGDmSZggGt7Cc4cbZND8Kncl&show_text=true&width=500" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="fb-post" data-show-text="true">
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid0ogyU9JnJ2JEmywsEwWRksLjruQFsKCBqAaGGBscpH7Nraihod5DR8iZesaocVg1cl&show_text=true&width=500" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="fb-post" data-show-text="true">
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid02NCADZKWmaYbuNq6mtravGV8MUHTJi7XvZkgzDUhxGUjXY2PkgoQuoT14yyY64BE8l&show_text=true&width=500" width="500" height="481" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="fb-post" data-show-text="true">
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid02mumdN89yKawAPB5myYrzxXQEp12tCM2m9PJa8J9C2oejRrwa9FKuAGcK8mj3eKCVl&show_text=true&width=500" width="500" height="481" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
+    </div>
+    <section class="subscribe-section">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay up-to-date with the latest news and trends in the dog world.</p>
+      <form class="subscribe-form" action="subscribe.php" method="post">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2023 Good Boi News. All rights reserved.</p>
+    </footer>
+    <script type="module" src="news.js"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <script
+      async
+      defer
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"
+      nonce="aNrUvJZc"
+    ></script>
+  </body>
+</html>

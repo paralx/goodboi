@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #222;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  color: #f00;
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.article-image {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.article-video {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100%;
+  height: 500px;
+}
+
+/*subscribe and footer css*/
+
+.subscribe-section {
+  margin-top: 50px;
+  background-color: #eee;
+  padding: 50px;
+  text-align: center;
+}
+
+.subscribe-section h2 {
+  margin-bottom: 20px;
+}
+
+.subscribe-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.subscribe-form input[type="email"]{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 14px;
+}
