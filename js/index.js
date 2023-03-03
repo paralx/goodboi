@@ -27,7 +27,7 @@ function createArticleElement(article) {
 }
 
 async function createArticlesList() {
-  const response = await fetch('data.json');
+  const response = await fetch('/data/data.json');
   const articlesData = await response.json();
   articlesData.forEach(articleObj => {
     articleObj.articles.forEach(article => {
