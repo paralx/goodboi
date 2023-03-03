@@ -34,7 +34,7 @@ function getArticleId() {
 }
 
 async function fetchArticle() {
-  const response = await fetch('/data/data.json');
+  const response = await fetch('data.json');
   const articlesData = await response.json();
   const articleId = getArticleId();
   let selectedArticle = null;
