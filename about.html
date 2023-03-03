@@ -20,29 +20,46 @@
     <div class="container">
       <h1>About Us</h1>
       <p>
-        Good Boi News was started with the intention of bringing a smile to people's faces with wholesome news about animals from all over the world.
+        Good Boi News was started with the intention of bringing a smile to
+        people's faces with wholesome news about animals from all over the
+        world.
       </p>
       <p>
-        Our team scours the internet for stories of heroic pets, heartwarming rescues, and other uplifting animal news that will brighten your day.
+        Our team scours the internet for stories of heroic pets, heartwarming
+        rescues, and other uplifting animal news that will brighten your day.
       </p>
       <p>
-        We hope that our website can be a source of positivity and joy in a world that often seems to be filled with negativity and sadness.
+        We hope that our website can be a source of positivity and joy in a
+        world that often seems to be filled with negativity and sadness.
       </p>
     </div>
     <section class="subscribe-section">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Stay up-to-date with the latest news and trends in the dog world.</p>
-        <form class="subscribe-form" action="subscribe.php" method="post">
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email address"
-          />
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
-      <footer>
-        <p>&copy; 2023 Good Boi News. All rights reserved.</p>
-      </footer>
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay up-to-date with the latest news and trends in the dog world.</p>
+      <form
+        class="subscribe-form"
+        id="subscribe-form"
+        action=""
+        accept-charset="utf-8"
+        method="post"
+      >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address"
+        />
+        <!-- List token -->
+        <!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+        <input type="hidden" name="campaign_token" value="Mi7NN" />
+        <!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+        <input type="hidden" name="start_day" value="0" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2023 Good Boi News. All rights reserved.</p>
+    </footer>
+    <script type="module" src="subscribe.js"></script>
   </body>
 </html>

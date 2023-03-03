@@ -27,34 +27,83 @@
       <div class="news-container">
         <!--Here add news from facebook page-->
         <div class="fb-post" data-show-text="true">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid0DSmeWwv1ofZqtbtPo12STum7sHjxihuigeFM6F7ZLhGDmSZggGt7Cc4cbZND8Kncl&show_text=true&width=500" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid0DSmeWwv1ofZqtbtPo12STum7sHjxihuigeFM6F7ZLhGDmSZggGt7Cc4cbZND8Kncl&show_text=true&width=500"
+            width="500"
+            height="500"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
         <div class="fb-post" data-show-text="true">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid0ogyU9JnJ2JEmywsEwWRksLjruQFsKCBqAaGGBscpH7Nraihod5DR8iZesaocVg1cl&show_text=true&width=500" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid0ogyU9JnJ2JEmywsEwWRksLjruQFsKCBqAaGGBscpH7Nraihod5DR8iZesaocVg1cl&show_text=true&width=500"
+            width="500"
+            height="500"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
         <div class="fb-post" data-show-text="true">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid02NCADZKWmaYbuNq6mtravGV8MUHTJi7XvZkgzDUhxGUjXY2PkgoQuoT14yyY64BE8l&show_text=true&width=500" width="500" height="481" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid02NCADZKWmaYbuNq6mtravGV8MUHTJi7XvZkgzDUhxGUjXY2PkgoQuoT14yyY64BE8l&show_text=true&width=500"
+            width="500"
+            height="481"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
         <div class="fb-post" data-show-text="true">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid02mumdN89yKawAPB5myYrzxXQEp12tCM2m9PJa8J9C2oejRrwa9FKuAGcK8mj3eKCVl&show_text=true&width=500" width="500" height="481" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendlyanimalsdaily%2Fposts%2Fpfbid02mumdN89yKawAPB5myYrzxXQEp12tCM2m9PJa8J9C2oejRrwa9FKuAGcK8mj3eKCVl&show_text=true&width=500"
+            width="500"
+            height="481"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
       </div>
     </div>
     <section class="subscribe-section">
       <h2>Subscribe to Our Newsletter</h2>
       <p>Stay up-to-date with the latest news and trends in the dog world.</p>
-      <form class="subscribe-form" action="subscribe.php" method="post">
+      <form
+        class="subscribe-form"
+        id="subscribe-form"
+        action=""
+        accept-charset="utf-8"
+        method="post"
+      >
         <input
           type="email"
           name="email"
+          id="email"
           placeholder="Enter your email address"
         />
+        <!-- List token -->
+        <!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+        <input type="hidden" name="campaign_token" value="Mi7NN" />
+        <!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+        <input type="hidden" name="start_day" value="0" />
         <button type="submit">Subscribe</button>
       </form>
     </section>
     <footer>
       <p>&copy; 2023 Good Boi News. All rights reserved.</p>
     </footer>
+    <script type="module" src="subscribe.js"></script>
     <script type="module" src="news.js"></script>
     <!-- Load Facebook SDK for JavaScript -->
     <script

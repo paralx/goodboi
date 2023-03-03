@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Good boi news - Article</title>
-    <link rel="stylesheet" href="article.css"/>
+    <link rel="stylesheet" href="article.css" />
   </head>
   <body>
     <nav>
@@ -22,21 +22,38 @@
       <div id="article-content"></div>
     </div>
     <section class="subscribe-section">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Stay up-to-date with the latest news and trends in the dog world.</p>
-        <form class="subscribe-form" action="subscribe.php" method="post">
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email address"
-          />
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
-      <footer>
-        <p>&copy; 2023 Good Boi News. All rights reserved.</p>
-      </footer>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay up-to-date with the latest news and trends in the dog world.</p>
+      <form
+        class="subscribe-form"
+        id="subscribe-form"
+        action=""
+        accept-charset="utf-8"
+        method="post"
+      >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address"
+        />
+        <!-- List token -->
+        <!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+        <input type="hidden" name="campaign_token" value="Mi7NN" />
+        <!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+        <input type="hidden" name="start_day" value="0" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2023 Good Boi News. All rights reserved.</p>
+    </footer>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    <script type="module" src="subscribe.js"></script>
     <script type="module" src="article.js"></script>
   </body>
 </html>
